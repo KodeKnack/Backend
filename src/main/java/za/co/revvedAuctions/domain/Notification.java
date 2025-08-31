@@ -31,6 +31,10 @@ public class Notification {
 
     protected Notification() {}
 
+    public void setRead(boolean read) {
+        this.isRead = read;
+    }
+
     private Notification(Builder builder) {
         this.notificationID = builder.notificationID;
         this.notificationType = builder.notificationType;
